@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{31F7D7D5-03AE-4BCB-8DD3-459B50CF2B30}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add employee.Designer.cs" />
+    <Compile Include="add new advertise by admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add new advertise by admin.Designer.cs" />
+    <Compile Include="Addflat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addflat.Designer.cs">
+      <DependentUpon>Addflat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="assign anothar employee .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assign anothar employee .Designer.cs" />
+    <Compile Include="assigned flats to employee .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assigned flats to employee .Designer.cs" />
+    <Compile Include="confirm by customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="confirm by customer.Designer.cs">
+      <DependentUpon>confirm by customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="costomer_work_system.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="costomer_work_system.Designer.cs">
+      <DependentUpon>costomer_work_system.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer_login.Designer.cs">
+      <DependentUpon>customer_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete customer.designer.cs">
+      <DependentUpon>delete customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete employee.designer.cs">
+      <DependentUpon>delete employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delete or update flat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delete or update flat.designer.cs">
+      <DependentUpon>delete or update flat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Flats.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_main.Designer.cs">
+      <DependentUpon>login_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rate  employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rate  employee.Designer.cs">
+      <DependentUpon>rate  employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="regster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="regster.Designer.cs">
+      <DependentUpon>regster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="review list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="review list.Designer.cs">
+      <DependentUpon>review list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update information of customer by admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update information of customer by admin.designer.cs">
+      <DependentUpon>update information of customer by admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update information of employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update information of employee.designer.cs">
+      <DependentUpon>update information of employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update information of flat by admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update information of flat by admin.designer.cs">
+      <DependentUpon>update information of flat by admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view company’s commission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view company’s commission.designer.cs">
+      <DependentUpon>view company’s commission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view favourite list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view favourite list.Designer.cs">
+      <DependentUpon>view favourite list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_falts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_falts.Designer.cs">
+      <DependentUpon>view_falts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="work_of_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="work_of_admin.designer.cs">
+      <DependentUpon>work_of_admin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add employee.resx" />
+    <EmbeddedResource Include="add new advertise by admin.resx" />
+    <EmbeddedResource Include="Addflat.resx">
+      <DependentUpon>Addflat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="assign anothar employee .resx" />
+    <EmbeddedResource Include="assigned flats to employee .resx" />
+    <EmbeddedResource Include="confirm by customer.resx">
+      <DependentUpon>confirm by customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="costomer_work_system.resx">
+      <DependentUpon>costomer_work_system.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_login.resx">
+      <DependentUpon>customer_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete customer.resx">
+      <DependentUpon>delete customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete employee.resx">
+      <DependentUpon>delete employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete or update flat.resx">
+      <DependentUpon>delete or update flat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_main.resx">
+      <DependentUpon>login_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rate  employee.resx">
+      <DependentUpon>rate  employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="regster.resx">
+      <DependentUpon>regster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="review list.resx">
+      <DependentUpon>review list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update information of customer by admin.resx">
+      <DependentUpon>update information of customer by admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update information of employee.resx">
+      <DependentUpon>update information of employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update information of flat by admin.resx">
+      <DependentUpon>update information of flat by admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view company’s commission.resx">
+      <DependentUpon>view company’s commission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view favourite list.resx">
+      <DependentUpon>view favourite list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_falts.resx">
+      <DependentUpon>view_falts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="work_of_admin.resx">
+      <DependentUpon>work_of_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences-system-login-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences-system-login-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Groups-Meeting-Dark-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Groups-Meeting-Dark-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Groups-Meeting-Dark-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\er.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fffffffffffffffff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-male-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fgd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maquette-fond-1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
